@@ -1,0 +1,139 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cagliostro&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="main">
+            <h1>Quiz</h1>
+
+            <hr>
+            <div id="q1">
+                <h2>Question 1 </h2>
+                <p>What is shown below?
+                    (<a href="https://en.wikipedia.org/wiki/Basketball" target="_blank">HINT</a>) </p>
+                <img src="Images/Basketball.png" alt="Basketball" width="200px">
+                <p>Answer: <input id="basketball" type="text"></p>
+                <h3 id="correct1">.</h3>
+            </div>
+            <hr>
+            <div id="q2">
+                <h2>Question 2</h2>
+                <p>Which of the following is a real animal?</p>
+                <ul>
+                    <p>
+                        <label class="container">
+                            <input type="radio" name="choice">Dragon
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="container">
+                            <input type="radio" name="choice">Unicorn
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="container">
+                            <input id="dingiso" type="radio" name="choice">Dingiso
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="container">
+                            <input type="radio" name="choice">Jackalope
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="container">
+                            <input type="radio" name="choice">Loch Ness Monster
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                </ul>
+                <h3 id="correct2">.</h3>
+            </div>
+
+            <hr>
+            <div id="q3">
+                <h2>Question 3</h2>
+                <p>What does this sound like?</p>
+                <p>
+                    <audio controls>
+
+                        <source src="Sounds/Birthday.mp3" type="audio/mpeg" Your browser does not support the audio
+                            element.>
+                    </audio>
+                    <p>Answer: <input id="birthday" type="text"></p>
+                </p>
+                <h3 id="correct3">.</h3>
+            </div>
+
+            <hr>
+            <div id="q4">
+                <h2>Question 4</h2>
+                <p>A boy has as many sisters as brothers, but each sister has only half as many sisters as brothers.
+                    How many brothers and sisters are there in the family?</p>
+                <p>
+                    Answer: <input id="threesisfourbro" type="text">
+                </p>
+                <h3 id="correct4">.</h3>
+            </div>
+            <hr>
+            <div id="q5">
+                <h2>Question 5</h2>
+                <p>“Albert and Bernard just became friends with Cheryl, and they want to know when her birthday is.
+                    Cheryl
+                    gives them a list of 10 possible dates.</p>
+
+                <p>May 15 May 16 May 19</p>
+
+                <p>June 17 June 18</p>
+
+                <p>July 14 July 16</p>
+
+                <p>August 14 August 15 August 17 </p>
+
+                <p>Cheryl then tells Albert and Bernard separately the month and the day of her birthday respectively.
+                </p>
+
+                <p>Albert: I don’t know when Cheryl’s birthday is, but I know that Bernard doesn’t not know too.</p>
+
+                <p>Bernard: At first I don’t know when Cheryl’s birthday is, but I know now.</p>
+
+                <p>Albert: Then I also know when Cheryl’s birthday is.</p>
+
+                <p>So when is Cheryl’s birthday?”</p>
+
+                <p> It’s unclear why Cheryl couldn’t just tell both Albert and Bernard the month and day she was born,
+                    but
+                    that’s irrelevant to solving this problem</p>
+                <img class="calendar" src="images/calendar.jpg" alt="calendar">
+                <p>
+                    Answer: <input id="july16" type="text">
+                </p>
+                <h3 id="correct5">.</h3>
+            </div>
+
+
+            <h2>Results</h2>
+            <p><button id="button" type="button"><span>Mark Quiz </span></button>Your score is <span id="score">__ </span>/ 5 <span
+                    id="percent">(__%)</span>
+            </p>
+            <p>
+                <span id="msg">.</span> 
+            </p>
+
+        </div>
+
+        <!--Load JavaScript-->
+        <script src="main.js"></script>
+    </body>
+
+    </html>
